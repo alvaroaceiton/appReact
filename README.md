@@ -1,3 +1,12 @@
+se requiere node
+
+se requiere instalar las dependencias
+npm install
+
+se requiere cambiar la clave de cliente de passport para la auth
+componente LoginGoogle
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
