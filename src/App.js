@@ -1,8 +1,10 @@
 import './App.css';
-import ShowCalendario from './components/ShowCalendario';
-import CreateCalendario from './components/CreateCalendario';
-import EditCalendario from './components/EditCalendario';
+import ShowCalendar from './components/ShowCalendar';
+import CreateCalendar from './components/CreateCalendar';
+import EditCalendar from './components/EditCalendar';
+import ListCalendar from './components/ListCalendar';
 import LoginGoogle from './components/LoginGoogle';
+import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 function App() {
   return (
@@ -10,10 +12,10 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={ <LoginGoogle />}></Route>
-          <Route path='/calendarioGoogleFront' element={ <LoginGoogle />}></Route>
-          <Route path='calendarioGoogleFront/show' element={ <ShowCalendario />}></Route>
-          <Route path='calendarioGoogleFront/create' element={ <CreateCalendario />}></Route>
-          <Route path='calendarioGoogleFront/edit/:id' element={ <EditCalendario />}></Route>
+          <Route path='/list' element={ <ListCalendar />}></Route>
+          <Route path='/show/:id' element={ <ShowCalendar />}></Route>
+          <Route path='/create' element={ <CreateCalendar />}></Route>
+          <Route path='/edit/:id' element={ <EditCalendar />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
